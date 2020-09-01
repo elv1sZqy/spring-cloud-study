@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul-gateway
+server:
+  port: 8003
+#zuul:
+#  routes:
+#    product:
+#      path: /product/**
+#      serviceId: feign-product
+#    consumer:
+#      path: /consumer/**
+#      serviceId: feign-consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
+#zuul:
+#  routes:
+#    feign-product: /product/**
+#    feign-consumer: /consumer/**
