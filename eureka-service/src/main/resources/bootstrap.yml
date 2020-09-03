@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eureka-service
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:9001/

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: feign-consumer
+  cloud:
+    config:
+      profile: prod
+      url: http://localhost:9001/
