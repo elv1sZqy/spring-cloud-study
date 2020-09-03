@@ -1,9 +1,26 @@
+#spring:
+#  application:
+#    name: feign-product
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        serviceId: config-server-eureka
+#      profile: dev
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:1111/eureka/
 spring:
-  application:
-    name: feign-product
   cloud:
     config:
-      discovery:
-        enabled: true
-        serviceId: config-server-eureka
       profile: dev
+      discovery:
+        service-id: config-server-eureka
+        enabled: true
+  application:
+    name: feign-product
