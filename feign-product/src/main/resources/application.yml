@@ -1,5 +1,3 @@
-server:
-  port: 8002
 eureka:
   instance:
     hostname: localhost
@@ -11,3 +9,8 @@ eureka:
 spring:
   application:
     name: feign-product
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server-eureka

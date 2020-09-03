@@ -32,3 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 /config-server/src/main/resources/application.yml
+!/config-by-eurela/src/main/resources/application.yml

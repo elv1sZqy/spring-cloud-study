@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: feign-product
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server-eureka
+    profile: dev
