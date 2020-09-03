@@ -5,3 +5,5 @@ spring:
     config:
       profile: dev
       uri: http://localhost:9001/
+server:
+  port: 1111
