@@ -5,3 +5,6 @@ spring:
     config:
       profile: prod
       url: http://localhost:9001/
+
+server:
+  port: 8081
