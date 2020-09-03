@@ -23,7 +23,7 @@ public class TestController implements TestFeign {
         return s;
     }
 
-    @GetMapping
+    @GetMapping("name")
     public String getName(){
         return name;
     }
